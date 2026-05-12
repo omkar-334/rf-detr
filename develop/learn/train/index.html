@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="SOTA Real-Time Object Detection Model">
+        <meta name="description" content="Train RF-DETR detection and segmentation models on custom datasets. Supports COCO and YOLO formats with one-line Python API and PyTorch Lightning.">
       
       
         <meta name="author" content="Roboflow">
@@ -28,10 +28,14 @@
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
+  
+    
       
         <title>Overview - RF-DETR</title>
       
     
+  
+
     
       <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
@@ -62,6 +66,87 @@
 
     
     
+  
+  <link rel="preconnect" href="https://storage.googleapis.com">
+
+  
+  
+  
+  <meta property="og:title" content="Overview - RF-DETR">
+  <meta property="og:description" content="Train RF-DETR detection and segmentation models on custom datasets. Supports COCO and YOLO formats with one-line Python API and PyTorch Lightning.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://rfdetr.roboflow.com/develop/learn/train/">
+  <meta property="og:image" content="https://storage.googleapis.com/com-roboflow-marketing/rf-detr/rf_detr_1-4_latency_accuracy_object_detection.png">
+  <meta property="og:image:width" content="840">
+  <meta property="og:image:height" content="630">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@roboflow">
+  <meta name="twitter:title" content="Overview - RF-DETR">
+  <meta name="twitter:description" content="Train RF-DETR detection and segmentation models on custom datasets. Supports COCO and YOLO formats with one-line Python API and PyTorch Lightning.">
+  <meta name="twitter:image" content="https://storage.googleapis.com/com-roboflow-marketing/rf-detr/rf_detr_1-4_latency_accuracy_object_detection.png">
+
+  
+  
+  
+  <meta property="article:modified_time" content="<spanTclass="git-revision-date-localized-pluginTgit-revision-date-localized-plugin-iso_datetime"Ttitle="AprilT24,T2026T21:56:09TUTC">2026-04-24T21:56:09</span>+00:00">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Overview",
+    "description": "Train RF-DETR detection and segmentation models on custom datasets. Supports COCO and YOLO formats with one-line Python API and PyTorch Lightning.",
+    "url": "https://rfdetr.roboflow.com/develop/learn/train/",
+    "isPartOf": {"@id": "https://rfdetr.roboflow.com/develop#website"},
+    "about": {"@id": "https://rfdetr.roboflow.com/develop#software"},
+    "proficiencyLevel": "Beginner to advanced",
+    "inLanguage": "en",
+    "keywords": "RF-DETR, rfdetr, object detection, instance segmentation, computer vision, Roboflow",
+    "datePublished": "2025-03-01",
+    "dateModified": "\u003cspanTclass=\"git-revision-date-localized-pluginTgit-revision-date-localized-plugin-iso_datetime\"Ttitle=\"AprilT24,T2026T21:56:09TUTC\"\u003e2026-04-24T21:56:09\u003c/span\u003e+00:00",
+    "image": "https://storage.googleapis.com/com-roboflow-marketing/rf-detr/rf_detr_1-4_latency_accuracy_object_detection.png",
+    "author": {"@type": "Organization", "name": "Roboflow", "url": "https://roboflow.com"},
+    "publisher": {"@type": "Organization", "name": "Roboflow", "url": "https://roboflow.com"},
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rfdetr.roboflow.com/develop/learn/train/"},
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".md-content h1", ".md-typeset > p:first-child"]
+    }
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "RF-DETR",
+        "item": "https://rfdetr.roboflow.com/develop"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Train Model",
+        "item": "https://rfdetr.roboflow.com/develop/learn/train/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Overview",
+        "item": "https://rfdetr.roboflow.com/develop/learn/train/"
+      }
+      
+    ]
+  }
+  </script>
+  
+  
+
   </head>
   
   
@@ -214,7 +299,7 @@
                 <li><a href="https://inference.roboflow.com">Inference</a></li>
                 <li><a href="https://supervision.roboflow.com">Supervision</a></li>
                 <li><a href="https://trackers.roboflow.com">Trackers</a></li>
-                <li><a href="https://rf-detr.roboflow.com">RF-DETR</a></li>
+                <li><a href="https://rfdetr.roboflow.com">RF-DETR</a></li>
                 <li><a href="https://maestro.roboflow.com">Maestro</a></li>
                 <li><a href="https://docs.roboflow.com">Roboflow</a></li>
             </ul>
@@ -369,13 +454,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../tutorials/" class="md-tabs__link">
+      <a href="../../cookbooks/" class="md-tabs__link">
         
   
   
     
   
-  Tutorials
+  Cookbooks
 
       </a>
     </li>
@@ -388,7 +473,26 @@
   
   
     <li class="md-tabs__item">
-      <a href="https://github.com/roboflow/rf-detr/releases" class="md-tabs__link">
+      <a href="../../resources/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Resources
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../changelog/" class="md-tabs__link">
         
   
   
@@ -1991,14 +2095,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/" class="md-nav__link">
+      <a href="../../cookbooks/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Tutorials
+    Cookbooks
   
 
     
@@ -2018,7 +2122,34 @@
   
   
     <li class="md-nav__item">
-      <a href="https://github.com/roboflow/rf-detr/releases" class="md-nav__link">
+      <a href="../../resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
         
   
   
@@ -2195,6 +2326,16 @@
 
 
 <h1 id="train-an-rf-detr-model">Train an RF-DETR Model<a class="headerlink" href="#train-an-rf-detr-model" title="Permanent link">&para;</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">Key Takeaways</p>
+<ul>
+<li>Train detection or segmentation models with a single <code>model.train(dataset_dir=...)</code> call</li>
+<li>Supports both COCO JSON and YOLO dataset formats with automatic detection</li>
+<li>Fine-tune from COCO-pretrained checkpoints (Nano to 2XLarge) for fastest convergence</li>
+<li>Built on PyTorch Lightning — use the high-level API or access PTL primitives directly for full control</li>
+<li>EMA weights, early stopping, and best-model checkpointing are included by default</li>
+</ul>
+</div>
 <p>You can train RF-DETR object detection and segmentation models on a custom dataset using the <code>rfdetr</code> Python package, or in the cloud using Roboflow.</p>
 <p>This guide describes how to train both an object detection and segmentation RF-DETR model.</p>
 <h2 id="training-paths">Training paths<a class="headerlink" href="#training-paths" title="Permanent link">&para;</a></h2>
@@ -2301,7 +2442,7 @@
 <ul>
 <li><a href="loggers/#tensorboard">TensorBoard</a> for local visualization</li>
 <li><a href="loggers/#weights-and-biases">Weights and Biases</a> for cloud-based tracking</li>
-<li><a href="loggers/#clearml">ClearML</a> for MLOps automation</li>
+<li><a href="loggers/#clearml">ClearML</a> workaround for SDK auto-binding</li>
 <li><a href="loggers/#mlflow">MLflow</a> for experiment lifecycle management</li>
 </ul>
 <p>→ <strong><a href="loggers/">Learn more about training loggers</a></strong></p>
@@ -2373,6 +2514,27 @@
 
 
 
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="April 24, 2026 21:56:09 UTC">2026-04-24 21:56:09</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
 
 
 
@@ -2397,7 +2559,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Roboflow 2025. All rights reserved.
+      Roboflow 2025–2026. All rights reserved.
     </div>
   
   
