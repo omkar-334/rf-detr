@@ -6,19 +6,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="SegmentationTrainConfig API reference for configuring RF-DETR segmentation training parameters, dataset options, and optimization settings.">
+        <meta name="description" content="KeypointTrainConfig API reference for configuring RF-DETR keypoint training parameters with keypoint loss coefficients and optimization settings.">
       
       
         <meta name="author" content="Roboflow">
       
       
-        <link rel="canonical" href="https://rfdetr.roboflow.com/develop/reference/segmentation_train_config/">
+        <link rel="canonical" href="https://rfdetr.roboflow.com/develop/reference/keypoint_train_config/">
       
       
-        <link rel="prev" href="../train_config/">
+        <link rel="prev" href="../segmentation_train_config/">
       
       
-        <link rel="next" href="../keypoint_train_config/">
+        <link rel="next" href="../training/">
       
       
         
@@ -31,7 +31,7 @@
   
     
       
-        <title>Segmentation Train Config - RF-DETR</title>
+        <title>Keypoint Train Config - RF-DETR</title>
       
     
   
@@ -72,10 +72,10 @@
   
   
   
-  <meta property="og:title" content="Segmentation Train Config - RF-DETR">
-  <meta property="og:description" content="SegmentationTrainConfig API reference for configuring RF-DETR segmentation training parameters, dataset options, and optimization settings.">
+  <meta property="og:title" content="Keypoint Train Config - RF-DETR">
+  <meta property="og:description" content="KeypointTrainConfig API reference for configuring RF-DETR keypoint training parameters with keypoint loss coefficients and optimization settings.">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://rfdetr.roboflow.com/develop/reference/segmentation_train_config/">
+  <meta property="og:url" content="https://rfdetr.roboflow.com/develop/reference/keypoint_train_config/">
   <meta property="og:image" content="https://storage.googleapis.com/com-roboflow-marketing/rf-detr/rf_detr_1-4_latency_accuracy_object_detection.png">
   <meta property="og:image:width" content="840">
   <meta property="og:image:height" content="630">
@@ -83,34 +83,34 @@
   
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@roboflow">
-  <meta name="twitter:title" content="Segmentation Train Config - RF-DETR">
-  <meta name="twitter:description" content="SegmentationTrainConfig API reference for configuring RF-DETR segmentation training parameters, dataset options, and optimization settings.">
+  <meta name="twitter:title" content="Keypoint Train Config - RF-DETR">
+  <meta name="twitter:description" content="KeypointTrainConfig API reference for configuring RF-DETR keypoint training parameters with keypoint loss coefficients and optimization settings.">
   <meta name="twitter:image" content="https://storage.googleapis.com/com-roboflow-marketing/rf-detr/rf_detr_1-4_latency_accuracy_object_detection.png">
 
   
   
   
   
-  <meta property="article:modified_time" content="2026-04-23T15:22:59">
+  <meta property="article:modified_time" content="2026-06-13T00:36:02">
   
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Segmentation Train Config",
-    "description": "SegmentationTrainConfig API reference for configuring RF-DETR segmentation training parameters, dataset options, and optimization settings.",
-    "url": "https://rfdetr.roboflow.com/develop/reference/segmentation_train_config/",
+    "headline": "Keypoint Train Config",
+    "description": "KeypointTrainConfig API reference for configuring RF-DETR keypoint training parameters with keypoint loss coefficients and optimization settings.",
+    "url": "https://rfdetr.roboflow.com/develop/reference/keypoint_train_config/",
     "isPartOf": {"@id": "https://rfdetr.roboflow.com/develop#website"},
     "about": {"@id": "https://rfdetr.roboflow.com/develop#software"},
     "proficiencyLevel": "Beginner to advanced",
     "inLanguage": "en",
     "keywords": "RF-DETR, rfdetr, object detection, instance segmentation, computer vision, Roboflow",
     "datePublished": "2025-03-01",
-    "dateModified": "2026-04-23T15:22:59",
+    "dateModified": "2026-06-13T00:36:02",
     "image": "https://storage.googleapis.com/com-roboflow-marketing/rf-detr/rf_detr_1-4_latency_accuracy_object_detection.png",
     "author": {"@type": "Organization", "name": "Roboflow", "url": "https://roboflow.com"},
     "publisher": {"@type": "Organization", "name": "Roboflow", "url": "https://roboflow.com"},
-    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rfdetr.roboflow.com/develop/reference/segmentation_train_config/"},
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rfdetr.roboflow.com/develop/reference/keypoint_train_config/"},
     "speakable": {
       "@type": "SpeakableSpecification",
       "cssSelector": [".md-content h1", ".md-typeset > p:first-child"]
@@ -138,8 +138,8 @@
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Segmentation Train Config",
-        "item": "https://rfdetr.roboflow.com/develop/reference/segmentation_train_config/"
+        "name": "Keypoint Train Config",
+        "item": "https://rfdetr.roboflow.com/develop/reference/keypoint_train_config/"
       }
       
     ]
@@ -160,7 +160,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#rfdetr.config.SegmentationTrainConfig" class="md-skip">
+        <a href="#rfdetr.config.KeypointTrainConfig" class="md-skip">
           Skip to content
         </a>
       
@@ -228,7 +228,7 @@
 
             </a>
             
-              Segmentation Train Config
+              Keypoint Train Config
             
           </span>
         </div>
@@ -1991,6 +1991,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../segmentation_train_config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Segmentation Train Config
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -2008,7 +2036,7 @@
   <span class="md-ellipsis">
     
   
-    Segmentation Train Config
+    Keypoint Train Config
   
 
     
@@ -2026,7 +2054,7 @@
   <span class="md-ellipsis">
     
   
-    Segmentation Train Config
+    Keypoint Train Config
   
 
     
@@ -2050,10 +2078,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#rfdetr.config.SegmentationTrainConfig" class="md-nav__link">
+  <a href="#rfdetr.config.KeypointTrainConfig" class="md-nav__link">
     <span class="md-ellipsis">
       
-        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;SegmentationTrainConfig
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;KeypointTrainConfig
       
     </span>
   </a>
@@ -2061,7 +2089,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#rfdetr.config.SegmentationTrainConfig-functions" class="md-nav__link">
+  <a href="#rfdetr.config.KeypointTrainConfig-functions" class="md-nav__link">
     <span class="md-ellipsis">
       
         Functions
@@ -2073,7 +2101,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#rfdetr.config.SegmentationTrainConfig.expand_paths" class="md-nav__link">
+  <a href="#rfdetr.config.KeypointTrainConfig.expand_paths" class="md-nav__link">
     <span class="md-ellipsis">
       
         <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;expand_paths
@@ -2084,7 +2112,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#rfdetr.config.SegmentationTrainConfig.validate_batch_size" class="md-nav__link">
+  <a href="#rfdetr.config.KeypointTrainConfig.validate_batch_size" class="md-nav__link">
     <span class="md-ellipsis">
       
         <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;validate_batch_size
@@ -2095,7 +2123,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#rfdetr.config.SegmentationTrainConfig.validate_ema_headroom" class="md-nav__link">
+  <a href="#rfdetr.config.KeypointTrainConfig.validate_ema_headroom" class="md-nav__link">
     <span class="md-ellipsis">
       
         <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;validate_ema_headroom
@@ -2106,7 +2134,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#rfdetr.config.SegmentationTrainConfig.validate_positive_intervals" class="md-nav__link">
+  <a href="#rfdetr.config.KeypointTrainConfig.validate_positive_intervals" class="md-nav__link">
     <span class="md-ellipsis">
       
         <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;validate_positive_intervals
@@ -2117,7 +2145,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#rfdetr.config.SegmentationTrainConfig.validate_positive_train_steps" class="md-nav__link">
+  <a href="#rfdetr.config.KeypointTrainConfig.validate_positive_train_steps" class="md-nav__link">
     <span class="md-ellipsis">
       
         <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;validate_positive_train_steps
@@ -2128,7 +2156,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#rfdetr.config.SegmentationTrainConfig.validate_prefetch_factor" class="md-nav__link">
+  <a href="#rfdetr.config.KeypointTrainConfig.validate_prefetch_factor" class="md-nav__link">
     <span class="md-ellipsis">
       
         <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;validate_prefetch_factor
@@ -2147,34 +2175,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../keypoint_train_config/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Keypoint Train Config
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -2389,10 +2389,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#rfdetr.config.SegmentationTrainConfig" class="md-nav__link">
+  <a href="#rfdetr.config.KeypointTrainConfig" class="md-nav__link">
     <span class="md-ellipsis">
       
-        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;SegmentationTrainConfig
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;KeypointTrainConfig
       
     </span>
   </a>
@@ -2400,7 +2400,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#rfdetr.config.SegmentationTrainConfig-functions" class="md-nav__link">
+  <a href="#rfdetr.config.KeypointTrainConfig-functions" class="md-nav__link">
     <span class="md-ellipsis">
       
         Functions
@@ -2412,7 +2412,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#rfdetr.config.SegmentationTrainConfig.expand_paths" class="md-nav__link">
+  <a href="#rfdetr.config.KeypointTrainConfig.expand_paths" class="md-nav__link">
     <span class="md-ellipsis">
       
         <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;expand_paths
@@ -2423,7 +2423,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#rfdetr.config.SegmentationTrainConfig.validate_batch_size" class="md-nav__link">
+  <a href="#rfdetr.config.KeypointTrainConfig.validate_batch_size" class="md-nav__link">
     <span class="md-ellipsis">
       
         <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;validate_batch_size
@@ -2434,7 +2434,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#rfdetr.config.SegmentationTrainConfig.validate_ema_headroom" class="md-nav__link">
+  <a href="#rfdetr.config.KeypointTrainConfig.validate_ema_headroom" class="md-nav__link">
     <span class="md-ellipsis">
       
         <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;validate_ema_headroom
@@ -2445,7 +2445,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#rfdetr.config.SegmentationTrainConfig.validate_positive_intervals" class="md-nav__link">
+  <a href="#rfdetr.config.KeypointTrainConfig.validate_positive_intervals" class="md-nav__link">
     <span class="md-ellipsis">
       
         <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;validate_positive_intervals
@@ -2456,7 +2456,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#rfdetr.config.SegmentationTrainConfig.validate_positive_train_steps" class="md-nav__link">
+  <a href="#rfdetr.config.KeypointTrainConfig.validate_positive_train_steps" class="md-nav__link">
     <span class="md-ellipsis">
       
         <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;validate_positive_train_steps
@@ -2467,7 +2467,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#rfdetr.config.SegmentationTrainConfig.validate_prefetch_factor" class="md-nav__link">
+  <a href="#rfdetr.config.KeypointTrainConfig.validate_prefetch_factor" class="md-nav__link">
     <span class="md-ellipsis">
       
         <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;validate_prefetch_factor
@@ -2502,17 +2502,19 @@
   
 
 
-  <h1>Segmentation Train Config</h1>
+  <h1>Keypoint Train Config</h1>
 
 <div class="doc doc-object doc-class">
 
 
 
-<a id="rfdetr.config.SegmentationTrainConfig"></a>
+<a id="rfdetr.config.KeypointTrainConfig"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
               Bases: <code><a class="autorefs autorefs-internal" title="&lt;code&gt;rfdetr.config.TrainConfig&lt;/code&gt;" href="../train_config/#rfdetr.config.TrainConfig">TrainConfig</a></code></p>
 
+
+        <p>Keypoint-specific training defaults.</p>
 
 
 
@@ -2522,19 +2524,21 @@
 
               <details class="quote">
                 <summary>Source code in <code>src/rfdetr/config.py</code></summary>
-                <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-836">836</a></span>
-<span class="normal"><a href="#__codelineno-0-837">837</a></span>
-<span class="normal"><a href="#__codelineno-0-838">838</a></span>
-<span class="normal"><a href="#__codelineno-0-839">839</a></span>
-<span class="normal"><a href="#__codelineno-0-840">840</a></span>
-<span class="normal"><a href="#__codelineno-0-841">841</a></span>
-<span class="normal"><a href="#__codelineno-0-842">842</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-836"><a id="__codelineno-0-836" name="__codelineno-0-836"></a><span class="k">class</span><span class="w"> </span><span class="nc">SegmentationTrainConfig</span><span class="p">(</span><span class="n">TrainConfig</span><span class="p">):</span>
-</span><span id="__span-0-837"><a id="__codelineno-0-837" name="__codelineno-0-837"></a>    <span class="n">num_select</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-</span><span id="__span-0-838"><a id="__codelineno-0-838" name="__codelineno-0-838"></a>    <span class="n">mask_point_sample_ratio</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">16</span>
-</span><span id="__span-0-839"><a id="__codelineno-0-839" name="__codelineno-0-839"></a>    <span class="n">mask_ce_loss_coef</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">5.0</span>
-</span><span id="__span-0-840"><a id="__codelineno-0-840" name="__codelineno-0-840"></a>    <span class="n">mask_dice_loss_coef</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">5.0</span>
-</span><span id="__span-0-841"><a id="__codelineno-0-841" name="__codelineno-0-841"></a>    <span class="n">cls_loss_coef</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">5.0</span>
-</span><span id="__span-0-842"><a id="__codelineno-0-842" name="__codelineno-0-842"></a>    <span class="n">segmentation_head</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
+                <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-845">845</a></span>
+<span class="normal"><a href="#__codelineno-0-846">846</a></span>
+<span class="normal"><a href="#__codelineno-0-847">847</a></span>
+<span class="normal"><a href="#__codelineno-0-848">848</a></span>
+<span class="normal"><a href="#__codelineno-0-849">849</a></span>
+<span class="normal"><a href="#__codelineno-0-850">850</a></span>
+<span class="normal"><a href="#__codelineno-0-851">851</a></span>
+<span class="normal"><a href="#__codelineno-0-852">852</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-845"><a id="__codelineno-0-845" name="__codelineno-0-845"></a><span class="k">class</span><span class="w"> </span><span class="nc">KeypointTrainConfig</span><span class="p">(</span><span class="n">TrainConfig</span><span class="p">):</span>
+</span><span id="__span-0-846"><a id="__codelineno-0-846" name="__codelineno-0-846"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Keypoint-specific training defaults.&quot;&quot;&quot;</span>
+</span><span id="__span-0-847"><a id="__codelineno-0-847" name="__codelineno-0-847"></a>
+</span><span id="__span-0-848"><a id="__codelineno-0-848" name="__codelineno-0-848"></a>    <span class="n">cls_loss_coef</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">2.0</span>  <span class="c1"># TODO: verify empirically before final release; ported as-is from internal recipe.</span>
+</span><span id="__span-0-849"><a id="__codelineno-0-849" name="__codelineno-0-849"></a>    <span class="n">keypoint_l1_loss_coef</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span id="__span-0-850"><a id="__codelineno-0-850" name="__codelineno-0-850"></a>    <span class="n">keypoint_findable_loss_coef</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span id="__span-0-851"><a id="__codelineno-0-851" name="__codelineno-0-851"></a>    <span class="n">keypoint_visible_loss_coef</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span id="__span-0-852"><a id="__codelineno-0-852" name="__codelineno-0-852"></a>    <span class="n">keypoint_nll_loss_coef</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mi">1</span>
 </span></code></pre></div></td></tr></table></div>
               </details>
 
@@ -2548,19 +2552,19 @@
 
 
 
-<h2 id="rfdetr.config.SegmentationTrainConfig-functions">Functions<a href="#rfdetr.config.SegmentationTrainConfig-functions" class="headerlink" title="Permanent link">&para;</a></h2>
+<h2 id="rfdetr.config.KeypointTrainConfig-functions">Functions<a href="#rfdetr.config.KeypointTrainConfig-functions" class="headerlink" title="Permanent link">&para;</a></h2>
 
 <div class="doc doc-object doc-function">
 
 
-<h3 id="rfdetr.config.SegmentationTrainConfig.expand_paths" class="doc doc-heading">
+<h3 id="rfdetr.config.KeypointTrainConfig.expand_paths" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">expand_paths</span><span class="p">(</span><span class="n">v</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-classmethod"><code>classmethod</code></small>
   </span>
 
-<a href="#rfdetr.config.SegmentationTrainConfig.expand_paths" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#rfdetr.config.KeypointTrainConfig.expand_paths" class="headerlink" title="Permanent link">&para;</a></h3>
 
 
     <div class="doc doc-contents ">
@@ -2595,14 +2599,14 @@ unchanged so they can match hosted model keys.</p>
 <div class="doc doc-object doc-function">
 
 
-<h3 id="rfdetr.config.SegmentationTrainConfig.validate_batch_size" class="doc doc-heading">
+<h3 id="rfdetr.config.KeypointTrainConfig.validate_batch_size" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate_batch_size</span><span class="p">(</span><span class="n">v</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-classmethod"><code>classmethod</code></small>
   </span>
 
-<a href="#rfdetr.config.SegmentationTrainConfig.validate_batch_size" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#rfdetr.config.KeypointTrainConfig.validate_batch_size" class="headerlink" title="Permanent link">&para;</a></h3>
 
 
     <div class="doc doc-contents ">
@@ -2638,14 +2642,14 @@ unchanged so they can match hosted model keys.</p>
 <div class="doc doc-object doc-function">
 
 
-<h3 id="rfdetr.config.SegmentationTrainConfig.validate_ema_headroom" class="doc doc-heading">
+<h3 id="rfdetr.config.KeypointTrainConfig.validate_ema_headroom" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate_ema_headroom</span><span class="p">(</span><span class="n">v</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-classmethod"><code>classmethod</code></small>
   </span>
 
-<a href="#rfdetr.config.SegmentationTrainConfig.validate_ema_headroom" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#rfdetr.config.KeypointTrainConfig.validate_ema_headroom" class="headerlink" title="Permanent link">&para;</a></h3>
 
 
     <div class="doc doc-contents ">
@@ -2677,14 +2681,14 @@ unchanged so they can match hosted model keys.</p>
 <div class="doc doc-object doc-function">
 
 
-<h3 id="rfdetr.config.SegmentationTrainConfig.validate_positive_intervals" class="doc doc-heading">
+<h3 id="rfdetr.config.KeypointTrainConfig.validate_positive_intervals" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate_positive_intervals</span><span class="p">(</span><span class="n">v</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-classmethod"><code>classmethod</code></small>
   </span>
 
-<a href="#rfdetr.config.SegmentationTrainConfig.validate_positive_intervals" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#rfdetr.config.KeypointTrainConfig.validate_positive_intervals" class="headerlink" title="Permanent link">&para;</a></h3>
 
 
     <div class="doc doc-contents ">
@@ -2716,14 +2720,14 @@ unchanged so they can match hosted model keys.</p>
 <div class="doc doc-object doc-function">
 
 
-<h3 id="rfdetr.config.SegmentationTrainConfig.validate_positive_train_steps" class="doc doc-heading">
+<h3 id="rfdetr.config.KeypointTrainConfig.validate_positive_train_steps" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate_positive_train_steps</span><span class="p">(</span><span class="n">v</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-classmethod"><code>classmethod</code></small>
   </span>
 
-<a href="#rfdetr.config.SegmentationTrainConfig.validate_positive_train_steps" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#rfdetr.config.KeypointTrainConfig.validate_positive_train_steps" class="headerlink" title="Permanent link">&para;</a></h3>
 
 
     <div class="doc doc-contents ">
@@ -2763,14 +2767,14 @@ unchanged so they can match hosted model keys.</p>
 <div class="doc doc-object doc-function">
 
 
-<h3 id="rfdetr.config.SegmentationTrainConfig.validate_prefetch_factor" class="doc doc-heading">
+<h3 id="rfdetr.config.KeypointTrainConfig.validate_prefetch_factor" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate_prefetch_factor</span><span class="p">(</span><span class="n">v</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-classmethod"><code>classmethod</code></small>
   </span>
 
-<a href="#rfdetr.config.SegmentationTrainConfig.validate_prefetch_factor" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#rfdetr.config.KeypointTrainConfig.validate_prefetch_factor" class="headerlink" title="Permanent link">&para;</a></h3>
 
 
     <div class="doc doc-contents ">
@@ -2826,7 +2830,7 @@ unchanged so they can match hosted model keys.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="April 23, 2026 15:22:59 UTC">2026-04-23 15:22:59</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 13, 2026 00:36:02 UTC">2026-06-13 00:36:02</span>
   </span>
 
     
